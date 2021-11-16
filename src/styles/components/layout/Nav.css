@@ -1,0 +1,84 @@
+/*Variables globales*/
+:root{
+    --ColorFav: rgb(9, 9, 151);
+}
+
+/* Body */
+body{
+    background-color: rgb(184, 188, 204);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Caja principal de tamaño 800pixeles */
+#Contenido{
+    background-color: rgb(139, 223, 235);    
+    padding-top: 0px;
+    width: 800px;  
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid black;    
+} 
+/*            Barra de navegacion          */
+/* --------------------------------------- */
+nav {
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 18px;
+    background-color: var(--ColorFav);
+    text-align: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    box-sizing: border-box;
+    height: 30px;  
+    padding-top: 4px; 
+    padding-bottom: 4px;
+    border-bottom: 1px solid black; 
+    /* Gradiente de la barra de navegacion*/
+    background: #090997; /* Old browsers */
+    background: -moz-linear-gradient(top,  #090997 0%, #00dddd 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #090997 0%,#00dddd 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #090997 0%,#00dddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
+}
+
+nav a{
+    color: aliceblue;
+    font-style: normal;
+    text-decoration: none;
+    transition:all 0.3s ease;   
+    padding-left: 8px;
+    padding-right: 8px; 
+}
+
+nav a:hover{
+    color: rgb(63, 46, 22);
+    background-color: rgb(115, 248, 241);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border: 2px solid;
+    border-color: black;
+    border-radius: 10px;
+    text-shadow: none;
+    /* Sombra de los botones */
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+    /* Gradiente */
+    background: #73f8f1; /* Old browsers */
+    background: -moz-linear-gradient(top,  #73f8f1 0%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #73f8f1 0%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #73f8f1 0%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73f8f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+}
+
+
+/* El boton del Dropdown menu esta oculto por defecto */
+.dropbtn{
+    display: none;
+}
