@@ -150,7 +150,7 @@ main{
 }
 
 main .intro{
-  /* background-image: url(../public/images/fondo.jpg); */
+  background-image: url(./fondo.jpg);
   padding: 10px;
   -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -596,6 +596,8 @@ box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
 -webkit-box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
 -moz-box-shadow: 3px 2px 26px 6px rgba(0,0,0,0.75);
 }
+
+
 /* ************************************************************** */
 /* MEDIA QUERIES *************************************************/
 
@@ -624,9 +626,11 @@ margin: 2% 0 2% 3%;
     width: 100%;
 }
 
+}
+
 /* Pantallas mas chicas */ 
 /* menos de 700px ya se tiene que mostrar el dropdown menu porque la botonera no entra*/
-}
+
 @media screen and (max-width: 700px){
 
   .formulario{

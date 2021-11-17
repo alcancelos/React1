@@ -27,7 +27,7 @@ const ContactoPage = (props) => {
                         <textarea id="message" name="message" placeholder="Escriba sus comentarios aqui." required></textarea>
                     </div>
                     <div className="boton">
-                        <input type="submit" value="enviar" class="btn-enviar" />
+                        <input type="submit" value="enviar" className="btn-enviar" />
                     </div>
                 </form>
 

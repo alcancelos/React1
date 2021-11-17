@@ -1,6 +1,6 @@
 
 
-import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import ContactoPage from './pages/ContactoPage';
 import HomePage from './pages/HomePage';
@@ -12,6 +12,7 @@ import Nav from './components/layout/Nav'
 import Footer from './components/layout/Footer';
 
 import './styles.css';
+import './styles/StylesMovile.css';
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
 
     </Router>
   );
+
 }
 
 export default App;
