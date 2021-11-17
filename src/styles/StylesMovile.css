@@ -94,7 +94,7 @@ header h1{
 nav {
     text-align: left;
 }
-nav ul li a:hover{
+nav a:hover{
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
@@ -128,7 +128,7 @@ nav ul li a:hover{
 }
 
 /* Links adentro del dropdown */
-.dropdown-content ul li a {
+.dropdown-content a {
   padding: 4px 8px;
   text-decoration: none; 
   display: block;
