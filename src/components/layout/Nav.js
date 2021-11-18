@@ -10,6 +10,7 @@ const Nav = (props) => {
                 <div className="dropdown-content">
                     <Link to="/">Home</Link>
                     <Link to="/nosotros">Nosotros</Link>
+                    <Link to="/servicios">Servicios</Link>
                     <Link to="/galeria">Galería</Link>
                     <Link to="/novedades">Novedades</Link>
                     <Link to="/contacto">Contacto</Link>
