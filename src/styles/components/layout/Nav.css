@@ -3,23 +3,8 @@
     --ColorFav: rgb(9, 9, 151);
 }
 
-/* Body */
-body{
-    background-color: rgb(184, 188, 204);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
-/* Caja principal de tamaño 800pixeles */
-#Contenido{
-    background-color: rgb(139, 223, 235);    
-    padding-top: 0px;
-    width: 800px;  
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-left: auto;
-    margin-right: auto;
-    border:2px solid black;    
-} 
+
 /*            Barra de navegacion          */
 /* --------------------------------------- */
 nav {
@@ -45,7 +30,17 @@ nav {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
 }
 
+/* nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+} */
+
+/* nav ul li{
+display: inline-block;
+} */
 nav a{
+  
     color: aliceblue;
     font-style: normal;
     text-decoration: none;
@@ -77,8 +72,103 @@ nav a:hover{
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73f8f1', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
 }
 
+.active{
+  color: #8dfcf6;
+  padding: 4px;
+  border-radius: 10px;
+  text-shadow: 6px 2px 7px rgba(0,0,0,0.95);
+}
 
 /* El boton del Dropdown menu esta oculto por defecto */
 .dropbtn{
     display: none;
+}
+
+/* Pantallas mas chicas */ 
+/* menos de 700px ya se tiene que mostrar el dropdown menu porque la botonera no entra*/
+
+@media screen and (max-width: 700px){
+
+  
+     /* Dropdown Content (oculto por defecto) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--ColorFav);
+  border: solid black 2px;
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  animation-duration: 0.2s;
+  animation-name: slidein;
+  background: #090997; /* Old browsers */
+  background: -moz-linear-gradient(top,  #090997 0%, #00dddd 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  #090997 0%,#00dddd 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  #090997 0%,#00dddd 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#090997', endColorstr='#00dddd',GradientType=0 ); /* IE6-9 */
+}
+
+/*Animacion del dropdown menu*/
+@keyframes slidein {
+  from {
+    margin-left: -100px;   
+  }
+  to {
+   margin-left: 0;
+  }
+}
+
+
+
+
+
+nav {
+    text-align: left;
+}
+nav a:hover{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(115, 248, 241);
+    border: 2px solid;
+    border-color: black;
+    border-radius: 10px;
+    /* Sombra de los botones */
+    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.75);
+
+}
+
+/* Style del Dropdown Button */
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+  border: none;
+  cursor: pointer;
+  display: block;
+  
+}
+
+/* contenedor del dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;  
+}
+
+/* Links adentro del dropdown */
+.dropdown-content a {
+  padding: 4px 8px;
+  text-decoration: none; 
+  display: block;
+}
+
+
+/* Muestra el dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;  
+}
 }

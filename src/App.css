@@ -1,38 +1,39 @@
-.App {
+/*Variables globales*/
+:root{
+    --ColorFav: rgb(9, 9, 151);
+}
+
+/* Body */
+body{
+    background-color: rgb(184, 188, 204);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Caja principal de tamaño 800pixeles */
+#Contenido{
+    background-color: rgb(139, 223, 235);    
+    padding-top: 0px;
+    width: 800px;  
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-left: auto;
+    margin-right: auto;
+    border:2px solid black;    
+}
+
+/*    Main                      */
+/* ---------------------------- */
+main{
+  box-sizing: border-box;
+  width: 100%; 
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media screen and (max-width: 799px){
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+    /* El contenido lo ajusto al 100% */
+#Contenido{
+    width: 100%;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

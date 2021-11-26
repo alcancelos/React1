@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { NavLink } from "react-router-dom";
+import '../../styles/components/layout/Nav.css'
 
 const Nav = (props) => {
     return (
@@ -8,12 +8,12 @@ const Nav = (props) => {
             <div className="dropdown">
                 <button className="dropbtn"><i className="fas fa-bars"></i></button>
                 <div className="dropdown-content">
-                    <Link to="/">Home</Link>
-                    <Link to="/nosotros">Nosotros</Link>
-                    <Link to="/servicios">Servicios</Link>
-                    <Link to="/galeria">Galería</Link>
-                    <Link to="/novedades">Novedades</Link>
-                    <Link to="/contacto">Contacto</Link>
+                    <NavLink activeClassName="activo" exact to="/">Home</NavLink>
+                    <NavLink activeClassName="activo" exact to="/nosotros">Nosotros</NavLink>
+                    <NavLink activeClassName="activo" exact to="/servicios">Servicios</NavLink>
+                    <NavLink activeClassName="activo" exact to="/galeria">Galería</NavLink>
+                    <NavLink activeClassName="activo" exact to="/novedades">Novedades</NavLink>
+                    <NavLink activeClassName="activo" exact to="/contacto">Contacto</NavLink>
                 </div>
             </div>
         </nav>

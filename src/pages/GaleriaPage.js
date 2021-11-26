@@ -1,5 +1,7 @@
 import React from "react";
+import '../styles/components/pages/GaleriaPage.css';
 import '../styles/lightbox.css'
+
 
 const GaleriaPage = (props) => {
     return (

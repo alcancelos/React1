@@ -1,0 +1,90 @@
+/* Galería de Fotos */
+
+
+
+.galeria .foto{
+  width: 28%;
+  
+  float: left;
+  border: 1px solid blue;
+  /* padding: 0.3em; */
+  margin: 2% 0 3% 4%;
+  box-sizing: border-box;
+  transition:all 0.3s ease; 
+   text-align: center;
+}
+
+.galeria .foto:nth-child(5n+1){
+  margin-bottom: 6%;
+}
+
+.galeria .foto img{
+  width: 100%;
+  /* Para que ocupe toda la caja */
+  display: block;
+}
+
+.galeria .Descripcion{
+  display: none;
+  position: absolute;
+  color: #12125e;
+  padding: 5px;
+ 
+  font-weight: 600;
+  animation-name: MiAnimacion;
+     animation-duration: 0.5s; 
+}
+
+@keyframes MiAnimacion {
+    from {transform: translateY(-80px);
+      transform:scale(10%);
+      }
+    to {transform: translateY(-80px);
+      transform: scale(100%);
+      }
+}
+
+.foto:hover{
+ box-shadow: -1px 2px 34px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 2px 34px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 34px 0px rgba(0,0,0,0.75);
+filter: saturate(213%);
+-webkit-filter: saturate(213%);
+-moz-filter: saturate(213%);
+
+}
+
+
+.foto:hover .Descripcion {
+  display: block;
+}
+
+.galeria h3{
+  color: #090997;
+}
+
+/* ************************************************************** */
+/* MEDIA QUERIES *************************************************/
+
+@media screen and (max-width: 799px){
+
+    
+.galeria .foto{
+  width: 45%;
+box-sizing: border-box;
+margin: 2% 0 2% 3%;
+}
+
+.galeria .foto:nth-child(n+1){
+  margin-bottom: 6%;
+  
+}
+}
+
+/* menos de 600 px acomodo algunas cajas para que ocupen el 100% */
+@media screen and (max-width: 600px){
+.galeria .foto{
+  width: 95%;
+box-sizing: border-box;
+margin: 2% 0 4% 3%;}
+}
