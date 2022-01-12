@@ -4,6 +4,7 @@ import '../styles/components/pages/NovedadesPage.css';
 const NovedadesPage = (props) => {
     return (
         <main>
+
             <h3>Novedades</h3>
             <div className="Novedades">
                 <div className="Novedad">
