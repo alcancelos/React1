@@ -13,7 +13,7 @@ const NovedadesPage = (props) => {
     useEffect(()=>{
         const cargarNovedades = async () => {
             setLoading(true);
-            const response = await axios.get('http://localhost:3000/api/novedades');
+            const response = await axios.get('https://opjuridicocontable-backend.herokuapp.com/api/novedades');
             setNovedades(response.data);
             setLoading(false);
         };
