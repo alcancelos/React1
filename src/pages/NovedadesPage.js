@@ -4,7 +4,7 @@ import React, {useState,useEffect} from 'react';
 import axios from 'axios';
 import NovedadItem from "../components/Novedades/novedadItem";
 
-
+import moment from 'moment';
 
 const NovedadesPage = (props) => {
     const [loading, setLoading] = useState(false);
@@ -36,7 +36,7 @@ const NovedadesPage = (props) => {
 
                 novedades.map(item=> <NovedadItem key={item.id_novedad}
                 title={item.titulo} imagen={item.imagen} 
-                contenido={item.contenido} fecha={item.fecha}/>)
+                contenido={item.contenido} fecha={moment(item.fecha).format('DD-MM-YYYY')}/>)
 
             
             
